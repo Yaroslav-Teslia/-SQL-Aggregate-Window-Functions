@@ -1,4 +1,3 @@
-```sql
 -- 1. Підрахунок фільмів за роками
 SELECT "Movie Name",
        "Release Year",
@@ -82,4 +81,4 @@ SELECT "Release Year",
        gross_int,
        MAX(gross_int) OVER (PARTITION BY "Release Year", "Genre") AS max_gross_by_year_genre
 FROM cte;
-```
+
