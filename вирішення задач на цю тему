@@ -1,6 +1,5 @@
-```sql
 -- 1. Підрахунок фільмів за роками
-SELECT "Movie Name",
+```sql SELECT "Movie Name",
        "Release Year",
        COUNT(*) OVER (PARTITION BY "Release Year") AS nmb_in_the_year
 FROM movies
