@@ -1,3 +1,4 @@
+```sql
 -- 1. Підрахунок фільмів за роками
 SELECT "Movie Name",
        "Release Year",
