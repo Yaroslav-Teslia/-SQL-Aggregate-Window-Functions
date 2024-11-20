@@ -79,9 +79,9 @@ WITH cte AS (
 )
 SELECT *,
 CASE 
-	WHEN "IMDB Rating" >= 8 	THEN 'Hit'
-	WHEN votes_int > 500000 	THEN 'Hit'
-	WHEN groos_int > 100000000 	THEN 'Hit'
+	WHEN "IMDB Rating" >= 8 	
+	AND votes_int > 500000 	
+	AND groos_int > 100000000 	THEN 'Hit'
 	ELSE 'Average'
 END AS success_check
 FROM cte
